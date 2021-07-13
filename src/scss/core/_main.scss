@@ -1,0 +1,11 @@
+main {
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+
+	section {
+		&:not(:last-child) {
+			margin-bottom: var(--mini-gutter);
+		}
+	}
+}

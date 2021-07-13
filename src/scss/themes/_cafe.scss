@@ -1,0 +1,7 @@
+[data-theme=cafe] {
+	.framed {
+		--framed-background-color: var(--black);
+		--framed-border-image: url('/images/ui/frames/cafe.png');
+		--framed-border-repeat: repeat;
+	}
+}

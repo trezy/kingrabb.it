@@ -1,0 +1,25 @@
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	image-rendering: pixelated;
+	text-rendering: optimizeLegibility;
+}
+
+body, html {
+	height: 100vh;
+	// overflow: hidden;
+	width: 100vw;
+}
+
+html {
+	cursor: var(--pointer-cursor-url), auto;
+	font-size: 10px;
+}
+
+body {
+	background-color: var(--black);
+	color: var(--white);
+	font-family: Pixelar;
+	font-size: #{scaleValue(8px)};
+	overflow: hidden;
+}

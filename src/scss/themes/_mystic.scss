@@ -1,0 +1,99 @@
+[data-theme=mystic] {
+	.framed {
+		--framed-background-color: var(--black);
+		--framed-border-image: url('/images/ui/frames/mystic.png');
+		--framed-padding: #{scaleValue(10px)};
+
+		clip-path: polygon(
+			0 0,
+			#{scaleValue(3px)} 0,
+			#{scaleValue(3px)} #{scaleValue(1px)},
+
+			calc(100% - #{scaleValue(3px)}) #{scaleValue(1px)},
+			calc(100% - #{scaleValue(3px)}) #{scaleValue(3px)},
+			calc(100% - #{scaleValue(1px)}) #{scaleValue(3px)},
+
+			calc(100% - #{scaleValue(1px)}) 100%,
+
+			#{scaleValue(3px)} 100%,
+			#{scaleValue(3px)} calc(100% - #{scaleValue(2px)}),
+			#{scaleValue(1px)} calc(100% - #{scaleValue(2px)}),
+
+			#{scaleValue(1px)} #{scaleValue(3px)},
+			0 #{scaleValue(3px)},
+		);
+	}
+
+	.button {
+		--button-background-color: var(--black);
+		--button-border-image: url('/assets/images/ui/buttons/mystic.png');
+		--button-border-repeat: stretch;
+		--button-border-width-bottom: 5;
+		--button-border-width-left: 2;
+		--button-border-width-right: 2;
+		--button-border-width-top: 3;
+		--button-padding: #{scaleValue(4px)};
+		--button-padding-bottom: #{scaleValue(3px)};
+		--button-padding-left: #{scaleValue(6px)};
+		--button-padding-right: #{scaleValue(6px)};
+		--button-padding-top: #{scaleValue(3px)};
+
+		clip-path: polygon(
+			0 #{scaleValue(4px)},
+			#{scaleValue(1px)} #{scaleValue(4px)},
+			#{scaleValue(1px)} #{scaleValue(3px)},
+			#{scaleValue(2px)} #{scaleValue(3px)},
+			#{scaleValue(2px)} #{scaleValue(2px)},
+
+			calc(100% - #{scaleValue(2px)}) #{scaleValue(2px)},
+			calc(100% - #{scaleValue(2px)}) #{scaleValue(3px)},
+			calc(100% - #{scaleValue(1px)}) #{scaleValue(3px)},
+			calc(100% - #{scaleValue(1px)}) #{scaleValue(4px)},
+			100% #{scaleValue(4px)},
+
+			100% calc(100% - #{scaleValue(1px)}),
+			calc(100% - #{scaleValue(1px)}) calc(100% - #{scaleValue(1px)}),
+			calc(100% - #{scaleValue(1px)}) 100%,
+
+			#{scaleValue(1px)} 100%,
+			#{scaleValue(1px)} calc(100% - #{scaleValue(1px)}),
+			0 calc(100% - #{scaleValue(1px)}),
+		);
+
+		&:hover {
+			--button-background-color: var(--black);
+			--button-border-image: url('/assets/images/ui/buttons/mystic-hover.png');
+			--button-border-width-bottom: 5;
+			--button-border-width-left: 2;
+			--button-border-width-right: 2;
+			--button-border-width-top: 3;
+			--button-padding: #{scaleValue(4px)};
+			--button-padding-bottom: #{scaleValue(5px)};
+			--button-padding-left: #{scaleValue(6px)};
+			--button-padding-right: #{scaleValue(6px)};
+			--button-padding-top: #{scaleValue(1px)};
+
+			clip-path: polygon(
+				0 #{scaleValue(2px)},
+				#{scaleValue(1px)} #{scaleValue(2px)},
+				#{scaleValue(1px)} #{scaleValue(1px)},
+				#{scaleValue(2px)} #{scaleValue(1px)},
+				#{scaleValue(2px)} 0,
+
+				calc(100% - #{scaleValue(2px)}) 0,
+				calc(100% - #{scaleValue(2px)}) #{scaleValue(1px)},
+				calc(100% - #{scaleValue(1px)}) #{scaleValue(1px)},
+				calc(100% - #{scaleValue(1px)}) #{scaleValue(2px)},
+				100% #{scaleValue(4px)},
+
+				100% calc(100% - #{scaleValue(1px)}),
+				calc(100% - #{scaleValue(1px)}) calc(100% - #{scaleValue(1px)}),
+				calc(100% - #{scaleValue(1px)}) 100%,
+
+				#{scaleValue(1px)} 100%,
+				#{scaleValue(1px)} calc(100% - #{scaleValue(1px)}),
+				0 calc(100% - #{scaleValue(1px)}),
+			);
+		}
+	}
+}

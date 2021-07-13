@@ -1,0 +1,7 @@
+[data-theme=marble] {
+	.framed {
+		--framed-background-color: var(--black);
+		--framed-border-image: url('/images/ui/frames/marble.png');
+		--framed-border-repeat: repeat;
+	}
+}

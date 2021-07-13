@@ -1,0 +1,8 @@
+[data-theme=wood] {
+	.framed {
+		--framed-background-color: var(--black);
+		--framed-border-image: url('/images/ui/frames/wood.png');
+		--framed-border-repeat: repeat;
+		--framed-border-width: 9;
+	}
+}

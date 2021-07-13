@@ -1,0 +1,106 @@
+[data-theme=elegant] {
+	.framed {
+		--framed-background-color: var(--black);
+		--framed-border-image: url('/images/ui/frames/elegant.png');
+		--framed-border-repeat: repeat;
+		--framed-border-width: 9;
+		--framed-padding: #{scaleValue(1px)};
+
+		clip-path: polygon(
+			0 #{scaleValue(6px)},
+			#{scaleValue(1px)} #{scaleValue(6px)},
+			#{scaleValue(1px)} #{scaleValue(4px)},
+			0 #{scaleValue(4px)},
+			0 #{scaleValue(2px)},
+			#{scaleValue(1px)} #{scaleValue(2px)},
+			#{scaleValue(1px)} #{scaleValue(3px)},
+			#{scaleValue(2px)} #{scaleValue(3px)},
+			#{scaleValue(2px)} #{scaleValue(2px)},
+			#{scaleValue(3px)} #{scaleValue(2px)},
+			#{scaleValue(3px)} #{scaleValue(1px)},
+			#{scaleValue(2px)} #{scaleValue(1px)},
+			#{scaleValue(2px)} 0,
+			#{scaleValue(4px)} 0,
+			#{scaleValue(4px)} #{scaleValue(1px)},
+			#{scaleValue(6px)} #{scaleValue(1px)},
+			#{scaleValue(6px)} 0,
+
+			calc(100% - #{scaleValue(6px)}) 0,
+			calc(100% - #{scaleValue(6px)}) #{scaleValue(1px)},
+			calc(100% - #{scaleValue(4px)}) #{scaleValue(1px)},
+			calc(100% - #{scaleValue(4px)}) 0,
+			calc(100% - #{scaleValue(2px)}) 0,
+			calc(100% - #{scaleValue(2px)}) #{scaleValue(1px)},
+			calc(100% - #{scaleValue(3px)}) #{scaleValue(1px)},
+			calc(100% - #{scaleValue(3px)}) #{scaleValue(2px)},
+			calc(100% - #{scaleValue(2px)}) #{scaleValue(2px)},
+			calc(100% - #{scaleValue(2px)}) #{scaleValue(3px)},
+			calc(100% - #{scaleValue(1px)}) #{scaleValue(3px)},
+			calc(100% - #{scaleValue(1px)}) #{scaleValue(2px)},
+			100% #{scaleValue(2px)},
+			100% #{scaleValue(4px)},
+			calc(100% - #{scaleValue(1px)}) #{scaleValue(4px)},
+			calc(100% - #{scaleValue(1px)}) #{scaleValue(6px)},
+			100% #{scaleValue(6px)},
+
+			100% calc(100% - #{scaleValue(6px)}),
+			calc(100% - #{scaleValue(1px)}) calc(100% - #{scaleValue(6px)}),
+			calc(100% - #{scaleValue(1px)}) calc(100% - #{scaleValue(4px)}),
+			100% calc(100% - #{scaleValue(4px)}),
+			100% calc(100% - #{scaleValue(2px)}),
+			calc(100% - #{scaleValue(1px)}) calc(100% - #{scaleValue(2px)}),
+			calc(100% - #{scaleValue(1px)}) calc(100% - #{scaleValue(3px)}),
+			calc(100% - #{scaleValue(2px)}) calc(100% - #{scaleValue(3px)}),
+			calc(100% - #{scaleValue(2px)}) calc(100% - #{scaleValue(2px)}),
+			calc(100% - #{scaleValue(3px)}) calc(100% - #{scaleValue(2px)}),
+			calc(100% - #{scaleValue(3px)}) calc(100% - #{scaleValue(1px)}),
+			calc(100% - #{scaleValue(2px)}) calc(100% - #{scaleValue(1px)}),
+			calc(100% - #{scaleValue(2px)}) 100%,
+			calc(100% - #{scaleValue(4px)}) 100%,
+			calc(100% - #{scaleValue(4px)}) calc(100% - #{scaleValue(1px)}),
+			calc(100% - #{scaleValue(6px)}) calc(100% - #{scaleValue(1px)}),
+			calc(100% - #{scaleValue(6px)}) 100%,
+
+			#{scaleValue(6px)} 100%,
+			#{scaleValue(6px)} calc(100% - #{scaleValue(1px)}),
+			#{scaleValue(4px)} calc(100% - #{scaleValue(1px)}),
+			#{scaleValue(4px)} 100%,
+			#{scaleValue(2px)} 100%,
+			#{scaleValue(2px)} calc(100% - #{scaleValue(1px)}),
+			#{scaleValue(3px)} calc(100% - #{scaleValue(1px)}),
+			#{scaleValue(3px)} calc(100% - #{scaleValue(2px)}),
+			#{scaleValue(2px)} calc(100% - #{scaleValue(2px)}),
+			#{scaleValue(2px)} calc(100% - #{scaleValue(3px)}),
+			#{scaleValue(1px)} calc(100% - #{scaleValue(3px)}),
+			#{scaleValue(1px)} calc(100% - #{scaleValue(2px)}),
+			0 calc(100% - #{scaleValue(2px)}),
+			0 calc(100% - #{scaleValue(4px)}),
+			#{scaleValue(1px)} calc(100% - #{scaleValue(4px)}),
+			#{scaleValue(1px)} calc(100% - #{scaleValue(6px)}),
+			0 calc(100% - #{scaleValue(6px)}),
+		);
+
+		&::after {
+			background-image:
+				url('/assets/images/ui/frames/elegant-decoration-bottom.png'),
+				url('/assets/images/ui/frames/elegant-decoration-left.png'),
+				url('/assets/images/ui/frames/elegant-decoration-right.png'),
+				url('/assets/images/ui/frames/elegant-decoration-top.png');
+			background-position:
+				bottom center,
+				left center,
+				right center,
+				top center;
+			background-repeat: no-repeat;
+			content: '';
+			height: calc(100% / var(--pixel-multiplier));
+			left: 0;
+			position: absolute;
+			top: 0;
+			transform: scale(var(--pixel-multiplier));
+			transform-origin: top left;
+			width: calc(100% / var(--pixel-multiplier));
+			z-index: 1;
+		}
+	}
+}

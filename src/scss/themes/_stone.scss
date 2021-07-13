@@ -1,0 +1,9 @@
+[data-theme=stone] {
+	.framed {
+		--framed-background-color: var(--black);
+		--framed-border-image: url('/images/ui/frames/stone.png');
+		--framed-border-repeat: repeat;
+		--framed-border-width: 5;
+		--framed-padding: #{scaleValue(4px)};
+	}
+}

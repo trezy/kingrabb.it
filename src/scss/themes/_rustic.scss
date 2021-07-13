@@ -1,0 +1,33 @@
+[data-theme=rustic] {
+	.framed {
+		--framed-background-color: var(--black);
+		--framed-border-image: url('/images/ui/frames/rustic.png');
+		--framed-border-width: #{scaleValue(5)};
+
+		clip-path: polygon(
+			#{scaleValue(1px)} #{scaleValue(4px)},
+			0 #{scaleValue(4px)},
+			0 0,
+			#{scaleValue(4px)} 0,
+			#{scaleValue(4px)} #{scaleValue(1px)},
+
+			calc(100% - #{scaleValue(4px)}) #{scaleValue(1px)},
+			calc(100% - #{scaleValue(4px)}) 0,
+			100% 0,
+			100% #{scaleValue(4px)},
+			calc(100% - #{scaleValue(1px)}) #{scaleValue(4px)},
+
+			calc(100% - #{scaleValue(1px)}) calc(100% - #{scaleValue(4px)}),
+			100% calc(100% - #{scaleValue(4px)}),
+			100% 100%,
+			calc(100% - #{scaleValue(4px)}) 100%,
+			calc(100% - #{scaleValue(4px)}) calc(100% - #{scaleValue(1px)}),
+
+			#{scaleValue(4px)} calc(100% - #{scaleValue(1px)}),
+			#{scaleValue(4px)} 100%,
+			0 100%,
+			0 calc(100% - #{scaleValue(4px)}),
+			#{scaleValue(1px)} calc(100% - #{scaleValue(4px)}),
+		);
+	}
+}

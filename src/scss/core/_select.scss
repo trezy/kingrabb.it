@@ -1,0 +1,12 @@
+select {
+	--padding: calc(var(--gutter) / 2);
+
+	appearance: none;
+	font-family: inherit;
+	font-size: inherit;
+	height: auto;
+	// height: calc(1ch + var(--padding));
+	// line-height: 1.5ch;
+	padding: var(--padding);
+	width: 100%;
+}

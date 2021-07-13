@@ -1,0 +1,7 @@
+[data-theme=royal] {
+	.framed {
+		--framed-background-color: var(--black);
+		--framed-border-image: url('/images/ui/frames/royal.png');
+		--framed-border-width: 14;
+	}
+}

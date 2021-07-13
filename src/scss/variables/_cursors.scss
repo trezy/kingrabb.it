@@ -1,0 +1,7 @@
+:root {
+	--move-cursor-url: url('/game-assets/ui/cursors/move@2x.png');
+	--move-cursor: var(--move-cursor-url), move;
+
+	--pointer-cursor-url: url('/game-assets/ui/cursors/pointer@2x.png');
+	--pointer-cursor: var(--pointer-cursor-url), pointer;
+}

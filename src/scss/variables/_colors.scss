@@ -1,0 +1,20 @@
+:root {
+	--hue-shift: 0deg;
+
+	@include generateHSLCustomPropertiesFromColor('black', #242234);
+	@include generateHSLCustomPropertiesFromColor('blue', #285cc4);
+	@include generateHSLCustomPropertiesFromColor('gold', #dba463);
+	@include generateHSLCustomPropertiesFromColor('dark-gold', #bb7547);
+	// @include generateHSLCustomPropertiesFromColor('green', #4ba747);
+	// @include generateHSLCustomPropertiesFromColor('orange', #ee8e2e);
+	@include generateHSLCustomPropertiesFromColor('red', #b4202a);
+	@include generateHSLCustomPropertiesFromColor('white', white);
+	@include generateHSLCustomPropertiesFromColor('dim-white', #dae0ea);
+
+	--transparent: transparent;
+
+	--background-color: var(--black);
+	--text-color: var(--white);
+
+	--progress-fill-color: var(--green);
+}

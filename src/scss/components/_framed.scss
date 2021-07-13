@@ -1,0 +1,49 @@
+.framed {
+	--framed-background-color: transparent;
+	--framed-border-repeat: stretch;
+	--framed-border-width: 7;
+	--framed-border-width-bottom: var(--framed-border-width);
+	--framed-border-width-left: var(--framed-border-width);
+	--framed-border-width-right: var(--framed-border-width);
+	--framed-border-width-top: var(--framed-border-width);
+	--framed-font-color: inherit;
+	--framed-padding: #{scaleValue(3px)};
+
+	background-color: var(--framed-background-color);
+	color: var(--framed-font-color);
+	padding: var(--framed-padding);
+	position: relative;
+
+	&::before {
+		border-color: transparent;
+		border-image-repeat: var(--framed-border-repeat);
+		border-image-slice:
+			var(--framed-border-width-top)
+			var(--framed-border-width-right)
+			var(--framed-border-width-bottom)
+			var(--framed-border-width-left);
+		border-image-source: var(--framed-border-image);
+		border-style: solid;
+		border-width:
+			calc(#{scaleValue(var(--framed-border-width-top))} * 1px)
+			calc(#{scaleValue(var(--framed-border-width-right))} * 1px)
+			calc(#{scaleValue(var(--framed-border-width-bottom))} * 1px)
+			calc(#{scaleValue(var(--framed-border-width-left))} * 1px);
+		bottom: 0;
+		content: '';
+		left: 0;
+		pointer-events: none;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 1;
+	}
+
+	&.no-pad {
+		padding: 0;
+
+		> * {
+			padding: var(--framed-padding);
+		}
+	}
+}
